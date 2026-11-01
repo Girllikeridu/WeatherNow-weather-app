@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+<header class="navbar">
+    <div class="logo">
+        <span class="logo-icon">☁️</span>
+        <span>Weather<span class="logo-blue">Now</span></span>
+    </div>
+    <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Forecast</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle">
+        <span id="themeIcon">☀️</span>
+    </button>
+</header>
+<main class="weather-background">
+    <!-- SECTION OF WEATHER -->
+ <section class="weathercard">
+    <div class="weather-text">
+        <span class="subtitle">REAL TIME WEATHER INFORMATION</span>
+        <h1>WEATHER <span>AT A GLANCE</span></h1>
+        <p>GET REAL-TIME WEATHER UPDATES FOR ANY CITY AROUND THE WORLD</p>
+        <div class="search-bar">
+        <input type="text" placeholder="Enter City Name...">
+        <button>Get Weather</button>
+    </div>
+    <div class="error-msg">
+    </div>
+    <button class="location-btn"><i class="fa-solid fa-location-dot"></i>Use My Location</button>
+    </div>
+ </section>
+ <!-- weather casting -->
+<section class="weather-section">
+    <div class="current-weather-card">
+        <!-- City and Date -->
+        <div class="weather-card-header">
+            <div class="city-info">
+                <h2><i class="fa-solid fa-location-dot"></i> <span id="city-Name"> Islamabad</span></h2>
+                <p id="country-Name">Pakistan</p>
+            </div>
+            <div class="date-time">
+                <span id="weatherDate">Monday, 10 October 2026</span>
+                <span id="weatherTime">10:30 AM</span>
+            </div>
+        </div>
+        <!-- Main Weather Information -->
+        <div class="weather-main">
+            <div class="temperature-section">
+                <div class="weather-icon">🌤️</div>
+                <div class="temperature-info">
+                    <h1 class="temperature">24°C</h1>
+                    <p id="weather-description">Partly Cloudy</p>
+                </div>
+            </div>
+            <!-- Weather Details -->
+            <div class="weather-details">
+                <div class="weather-detail">
+                    <span>💧 Humidity</span>
+                    <h3 id="humidity">66%</h3>
+                </div>
+                <div class="weather-detail">
+                    <span>💨 Wind Speed</span>
+                    <h3 id="wind-Speed">12 km/h</h3>
+                </div>
+                <div class="weather-detail">
+                    <span>◉ Pressure</span>
+                    <h3 id="pressure">1012 hPa</h3>
+                </div>
+                <div class="weather-detail">
+                    <span>🌡️ Feels Like</span>
+                    <h3 id="feels-Like">26°C</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Five-Day Forecast -->
+        <div class="forecast-container">
+            <div class="forecast-day">
+                <p>Mon</p>
+                <span>☀️</span>
+                <h4>22° / 14°</h4>
+            </div>
+            <div class="forecast-day">
+                <p>Tue</p>
+                <span>☁️</span>
+                <h4>24° / 16°</h4>
+            </div>
+            <div class="forecast-day">
+                <p>Wed</p>
+                <span>🌧️</span>
+                <h4>23° / 15°</h4>
+            </div>
+            <div class="forecast-day">
+                <p>Thu</p>
+                <span>☀️</span>
+                <h4>21° / 13°</h4>
+            </div>
+            <div class="forecast-day">
+                <p>Fri</p>
+                <span>☀️</span>
+                <h4>22° / 14°</h4>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<!-- OTHER CITIES WEATHER -->
+ <section class="other-cities">
+    <div class="popular-cities">
+        <div class="cities">
+            <h1 class="heading"> <i class="fa-solid fa-city"></i> POPULAR CITIES</h1>
+            <button class="view-btn">View All ⮕</button>
+        </div>
+        <div class="cards">
+            <div class="city-cards" data-city="Karachi">
+                <div class="card1">
+                <span>🌧️</span>
+                <h3>Karachi<span>16°c</span></h3>
+                </div>
+            </div>
+            <div class="city-cards" data-city="Lahore">
+                <div class="card2">
+                <span>☀️</span>
+                <h3>Lahore<span>28°c</span></h3>
+                </div>
+            </div>
+            <div class="city-cards" data-city="New York">
+                <div class="card3">
+                <span>🌤️</span>
+                <h3>New York<span>18°c</span></h3>
+                </div>
+            </div>
+            <div class="city-cards" data-city="London">
+                <div class="card4">
+                    <span>🌩️</span>
+                    <h3>London<span>12°c</span></h3>
+                </div>
+            </div>
+            <div class="city-cards" data-city="Tokyo">
+                <div class="card5">
+                    <span>🌨️</span>
+                    <h3>Tokyo<span>10°c</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+<script src="script.js"></script>
+</body>
+</html>
